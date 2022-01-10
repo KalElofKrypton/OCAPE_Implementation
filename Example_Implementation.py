@@ -4,8 +4,8 @@
 # In[1]:
 
 
-#loading libraries/modules and setting up the visualization details, not all of these are needed for using the
-#ocape function
+#loading libraries/modules and setting up the visualization details, not all of these are needed for using this ocape function
+
 
 import numpy as np
 import xarray as xr
