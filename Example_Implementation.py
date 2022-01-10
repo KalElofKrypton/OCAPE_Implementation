@@ -44,9 +44,8 @@ average_sal = (high_sal + low_sal) / 2
 analytical_dens = jmd95.densjmd95(34.47, -1.6, 300) + 3e-3 
 compute_dens = jmd95.densjmd95(average_sal, 0.9, 300)
 for k in range (0,steps):
-        #calculate density from the linear given
-        #and then calculate with average of high and low
-        #then if statement
+        #calculate density from the linear step given in the Su et. al paper
+        #and then calculate with average of high and low salinity until the average is close to the density change given in paper
     average_sal = (high_sal + low_sal) / 2
     compute_dens = jmd95.densjmd95(average_sal, 0.9, 300)
     if compute_dens < analytical_dens:
